@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<title>Ваше резюме</title>
+<meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="main.css" />
+<form action="">
+  <label class="text">Name : <input required type="text" name="name" /></label>
+  <br />
+  <label class="text"
+    >Surname: <input required type="text" name="surname"
+  /></label>
+  <br />
+  <label>How old are you?: <input type="text" name="How old are you?" /></label>
+  <p>Gender</p>
+  <ul>
+    <li>
+      <label class="custom-radio">
+        <input id="male" type="radio" name="gender" value="male" />
+        <span>male</span>
+      </label>
+    </li>
+    <li>
+      <label class="custom-radio">
+        <input id="female" type="radio" name="gender" value="female" />
+        <span>female</span></label
+      >
+    </li>
+  </ul>
+  <label>Сitizenship: <input type="text" name="Сitizenship" /></label>
+  <br />
+  <br />
+  <label for="education">Choose your education:</label>
+  <select id="education" name="education">
+    <ortgroup label="Education">
+      <option value="No Education">No education</option>
+      <option value="Elementary School">Elementary School</option>
+      <option value="Secondary School">Secondary School</option>
+      <option value="Further Education">Further Education</option>
+      <option value-="Higher Education">Higher Education</option>
+    </ortgroup>
+  </select>
+  <p>Hobbies</p>
+  <div class="checkbox">
+    <input
+      class="custom-checkbox"
+      id="music"
+      type="checkbox"
+      name="music"
+      value="music"
+    />
+    <label for="music">music</label>
+  </div>
+  <div class="checkbox">
+    <input
+      class="custom-checkbox"
+      id="sport"
+      type="checkbox"
+      name="sport"
+      value="sport"
+    />
+    <label for="sport">sport</label>
+  </div>
+  <div class="checkbox">
+    <input
+      class="custom-checkbox"
+      id="movies"
+      type="checkbox"
+      name="movies"
+      value="movies"
+    />
+    <label for="movies">movies</label>
+  </div>
+  <div class="checkbox">
+    <input
+      class="custom-checkbox"
+      id="other"
+      type="checkbox"
+      name="other"
+      value="other"
+    />
+    <label for="other">other</label>
+  </div>
+
+  <label for="Schedule">Schedule:</label>
+  <select id="Schedule" name="Schedule">
+    <ortgroup label="Schedule">
+      <option value="Full-time">Full-time</option>
+      <option value="Part-time employment">Part-time employment</option>
+    </ortgroup>
+  </select>
+  <br />
+  <p>Experience in this field</p>
+  <ul>
+    <li>
+      <label class="custom-radio">
+        <input
+          id="Haven't got experience"
+          type="radio"
+          name="Experience in this field"
+          value="Haven't got experience"
+        />
+        <span>Haven't got experience</span>
+      </label>
+    </li>
+    <li>
+      <label class="custom-radio">
+        <input
+          id="Have got experience"
+          type="radio"
+          name="Experience in this field"
+          value="Have got experience"
+        />
+        <span>Have got experience</span>
+      </label>
+    </li>
+  </ul>
+  <p>A few words about you</p>
+  <textarea
+    placeholder="A few words about you"
+    name="message"
+    style="width: 300px; height: 200px"
+  ></textarea>
+  <br />
+  <fieldset>
+    <legend>Contact Information</legend>
+    <br />
+    Name:
+    <input type="text" placeholder="Name" /><br />
+    <br />
+    Date of birth:
+    <input required type="date" placeholder="Date of birth" name="born" /><br />
+    <br />
+    Tel:
+    <input type="tel" placeholder="Phone number" /><br />
+    <br />
+    Email:
+    <input type="email" placeholder="Your email" /><br />
+    <br />
+    Time to contact:
+    <input list="time" />
+    <datalist id="time">
+      <option value="9:00"></option>
+      <option value="12:00"></option>
+      <option value="15:00"></option>
+      <option value="18:00"></option>
+    </datalist>
+  </fieldset>
+  <br />
+  <button>Send</button>
+</form>
